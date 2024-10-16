@@ -1,0 +1,10 @@
+#app{
+    background-color: aquamarine;
+    width: 200px;
+    height: 100px;
+    margin: 50px;
+}
+
+#reportEvent{
+    background-color: pink;
+}
