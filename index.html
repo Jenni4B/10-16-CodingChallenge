@@ -4,47 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Function parameters </title>
+    <title>JavaScript Objects</title>
 </head>
-
 <body>
-    <div id="container">
-        <div id="buttonBox">
-            <button id="app"><h1>App</h1></button>
-        </div>
-
-        <div id="anotherBox">
-            <button id="app"><h1>App</h1></button>
-        </div>
-
-        <div id="reportEvent"></div>
+    <!-- Application Entry Point -->
+    <div id="app">
+        <div><button id="loadInfo">Load Launchpad Students</button></div>
+        <section id="user-profiles"></section>
     </div>
-</body>
-
-<script>
-
-    //  Step 1: Create a function that takes two parameters 1) an HTML Element, and 2) Message
-
-    const app = document.getElementById('app')
-    let reportEvent = document.getElementById('reportEvent')
-
-    function defineEvent(element, message) {
-        const reportEvent = document.getElementById('reportEvent');
-        console.log(message);
-
-   // Appends the new message to the existing ones, using <br> for line breaks
-        reportEvent.innerHTML += message + "<br>";
-}
     
-    //  Step 2: Create event listeners "Click" and "Mouse Over"
-
-    app.addEventListener('click', function(){
-        defineEvent(app, "App was clicked!");
-
-    })
-    app.addEventListener('mouseover', function(){
-        defineEvent(app, "App was moused over!");
-    })
-
-</script>
+    <script src="data.js" defer></script>
+    <script src="profile.js" defer></script>
+</body>
 </html>
